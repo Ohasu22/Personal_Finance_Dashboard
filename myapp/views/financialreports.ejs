@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Financial Reports</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Report Name</th>
+                
+                <th>Income</th>
+                <th>Savings</th>
+                <th>Expenses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% financialreports.forEach(report => { %>
+                <tr>
+                    <td><%= report.reportName %></td>
+                    
+                    <td><%= report.reportData.income %></td>
+                    <td><%= report.reportData.savings %></td>
+                    <td><%= report.reportData.expenses %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

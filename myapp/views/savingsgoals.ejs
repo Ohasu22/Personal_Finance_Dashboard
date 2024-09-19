@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Goals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Savings Goals</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Goal Name</th>
+                <th>Target Amount</th>
+                <th>Current Amount</th>
+                <th>Target Date</th>
+                <th>Progress</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <% savingsgoals.forEach(goal => { %>
+                <tr>
+                    <td><%= goal.goalName %></td>
+                    <td><%= goal.targetAmount %></td>
+                    <td><%= goal.currentAmount %></td>
+                    <td><%= new Date(goal.deadline).toLocaleDateString() %></td>
+                    <td><%= ((goal.currentAmount / goal.targetAmount) * 100).toFixed(2) + '%' %></td>
+                    
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
