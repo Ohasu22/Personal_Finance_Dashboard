@@ -32,7 +32,7 @@ The Personal Financial Dashboard offers a responsive and interactive interface t
 ### 1. Clone the Repository
 
 ```bash```
-git clone https://github.com/yourusername/personal-financial-dashboard.git
+git clone https://github.com/Ohasu22/Personal_Finance_Dashboard.git
 cd personal-financial-dashboard
 
 ### 2. Install Node.js & npm
