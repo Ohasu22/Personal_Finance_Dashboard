@@ -27,32 +27,6 @@ The Personal Financial Dashboard offers a responsive and interactive interface t
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash```
-git clone https://github.com/Ohasu22/Personal_Finance_Dashboard.git
-cd personal-financial-dashboard
-
-### 2. Install Node.js & npm
-Make sure Node.js is installed.
-Check installation:
-node -v
-npm -v
-
-### 3. Install Dependencies
-node_modules is not included in the repository due to size. Run this command in your project directory:
-npm install
-
-### 4. Start the Server
-Navigate to the root folder (such as myapp) and run:
-node app.js
-
-### 5. View the App
-Open your browser and go to:
-http://localhost:3000
-
 ## 👨‍💻 Developed By
 [Ojas Gharde](https://github.com/Ohasu22)
 [Akhilesh Ukey](https://github.com/AkhileshUkey84)
